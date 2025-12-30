@@ -4,22 +4,22 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
- const [multiply , setMultiply]  = useState(0);
+ const [value , setValue]  = useState(0);
 
-const   multiplyVal=()=> {
-  setMultiply(multiply + 1 )}
-const divideVal= ()=>{
-  setMultiply(multiply - 1)}
+const   addVal=()=> {
+  setValue(value + 1 )}
+const removeVal= ()=>{
+  setValue(value - 1)}
 
 return(
   <div>
-   <h1> Counter App : {multiply}</h1>
+   <h1> Counter App : {value}</h1>
 
    <button
-   onClick={multiplyVal}>Add Value  </button>
+   onClick={addVal}>Add Value  </button>
    <br />
    <button
-   onClick={divideVal}>Remove Value </button>
+   onClick={removeVal}>Remove Value </button>
 
   </div>
 )
