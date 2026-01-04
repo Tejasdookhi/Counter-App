@@ -14,10 +14,10 @@ return(
    <h1> Counter App : {value}</h1>
 
    <button
-   onClick={addVal}>Add Value  </button>
+   onClick={addVal}>Add Value By One  </button>
    <br />
    <button
-   onClick={removeVal}>Remove Value </button>
+   onClick={removeVal}>Remove Value  By One </button>
 
   </div>
 )
